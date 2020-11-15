@@ -1,1 +1,1 @@
-This is not the original twarc. client.py was slightly modified for ourown purpose
+This is not the original twarc. client.py was slightly modified for our own purpose
