@@ -5,7 +5,6 @@
 # hydrate them with twarc. The line oriented JSON files will
 # be placed right next to each tweet id file.
 
-import json
 from pathlib import Path
 from twarc import Twarc
 from pyspark import SparkConf, SparkContext
