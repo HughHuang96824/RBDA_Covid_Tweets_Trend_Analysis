@@ -1,5 +1,4 @@
 from pyspark import SparkContext
-from pyspark.sql import SQLContext
 import ast
 
 def toKV(line):
