@@ -10,8 +10,8 @@ from twarc import Twarc
 from pyspark import SparkConf, SparkContext
 import sys
 
-twarc = Twarc(consumer_key="ledLMTpVEnaY8Dk4qXH980RfM", consumer_secret="Mza5q9YYJpVpIULpIdQILi3V5ftlrBB158Ec2KIK8rI0B0kss3",
-                 access_token="1219964306911059969-CO8zw9O2w61PFl46Q7jRrgbrqkGLxy", access_token_secret="8ymranCmZ2sOPFcYj9AYPnIWPBRMMVXRaSYVmCRHUedmN")
+twarc = Twarc(consumer_key="xxx", consumer_secret="xxxxxx", app_auth=True)
+
 
 def extractInfo(tweet):
     hydrated_info = {}
