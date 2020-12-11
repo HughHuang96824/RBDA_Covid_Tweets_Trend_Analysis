@@ -1,6 +1,7 @@
-### Not a vinila word count
-We are trying to get the trending of each word.  
-We bring the favorite_count and retweet_count in to calculation.
+Code to compute the trending of each word using Spark.  
+
+usage: pyspark unigram_wordTrend.py \<outdir>  \<#topk words to show>  
+example: pyspark unigram_wordTrend.py result 100
 
 ### How I preprocess tweets before word count:
 * remove tweets that are retweets from dataset
@@ -28,6 +29,6 @@ We can use a different dataset from another author: [COVID-19-TweetIDs](https://
 That means we cannot get a complete word trend from Janurary to Now unless we have more time.
 
 
-###Reference
+### Reference  
 [Analyze Word Frequency Counts Using Twitter Data and Tweepy in Python](https://www.earthdatascience.org/courses/use-data-open-source-python/intro-to-apis/calculate-tweet-word-frequencies-in-python/)  
 [nltk](https://www.nltk.org/)
