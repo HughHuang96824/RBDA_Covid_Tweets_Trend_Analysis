@@ -24,6 +24,7 @@ for i in range(1,59):
             if word[-1] in [":", "”"]:
                 word = word[:-1]
             if not rows:
+                print(word)
                 rows.append([word]+[0]*58)
                 rows[0][i] = score
                 dict[word] = word_id
@@ -36,6 +37,8 @@ for i in range(1,59):
                     rows[-1][i] = score
                     dict[word] = word_id
 
+print(dict)
+
 #days
 d1 = datetime.date(2020, 3, 18)
 d2 = datetime.date(2020, 5, 14)
@@ -44,7 +47,7 @@ headers += days
 
 #remove keywords
 keyword = ['covid', 'corona', "virus", 'coronavirus', 'covid-19', "covid19"]
-print(rows)
+
 for r in rows:
     #print(r[0])
     if len(r[0]) == 1:
@@ -53,9 +56,7 @@ for r in rows:
         if r[0] in keyword:
             rows.remove(r)
 
-print(headers)
-
-with open('test.csv','w')as f:
+with open('race.csv','w')as f:
     f_csv = csv.writer(f)
     f_csv.writerow(headers)
     for i in range(len(rows)):
